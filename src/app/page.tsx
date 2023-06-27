@@ -2,6 +2,7 @@
 import { useState } from "react"
 import PcMenu from "@/app/components/pc-menu"
 import MobileMenu from "@/app/components/mobile-menu"
+import News from "@/app/components/news"
 import Company from "@/app/components/company"
 import Recruit from "@/app/components/recruit"
 import Contact from "@/app/components/contact"
@@ -64,6 +65,10 @@ export default function Home() {
         <div>
           お客様のニーズを捉え、価値ある製品やサービスを提供し続けていることです。    
         </div>
+      </div>
+
+      <div>
+        <News />
       </div>
 
       <div>
