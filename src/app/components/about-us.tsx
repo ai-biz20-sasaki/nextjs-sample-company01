@@ -1,10 +1,12 @@
+import Image from "next/image"
+
 export default function AboutUs() {
   return (
     <div className="bg-gray-500 text-white px-3">
       <div className="flex justify-center">
         <div className="flex flex-col">
           <div className="py-2">
-            <img src="" alt="Company image" className="" />
+            <Image src="" alt="Company image" className="" />
           </div>
           <div className="py-2">
             本社 〒xxx-xxxx

@@ -1,8 +1,10 @@
+import Image from "next/image"
+
 export default function Company() {
   return (
     <div className="bg-orange-500 text-white">
       <div className="py-3">
-        <img src="" alt="company image" className="" />
+        <Image src="" alt="company image" className="" />
       </div>
       <p className="border-b border-white mx-3 py-3">
         会社概要
@@ -41,7 +43,7 @@ export default function Company() {
         1234xxxxxxxxxxxx
       </p>
       <div className="flex justify-center py-3">
-        <img src="" alt="Logo" className="" />
+        <Image src="" alt="Logo" className="" />
       </div>
     </div>          
   )
