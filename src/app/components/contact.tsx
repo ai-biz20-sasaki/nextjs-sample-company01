@@ -19,7 +19,7 @@ export default function Contact() {
         </div>
       </div>
 
-      <div className="flex flex-row justify-center border-4 border-lime-500 mx-16 my-4 p-4 rounded-3xl">
+      <div className="flex flex-row justify-center border-4 border-lime-500 my-4 mx-16 p-4 rounded-3xl">
         <div className="py-2">
           <img src="" alt="mail icon" className="" />
         </div>
@@ -34,6 +34,9 @@ export default function Contact() {
         <div className="py-2">
           <img src="" alt="→" className="" />
         </div>
+      </div>
+      <div className="bg-gray-600 p-3">
+
       </div>
     </div>
   )

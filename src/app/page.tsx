@@ -5,6 +5,7 @@ import MobileMenu from "@/app/components/mobile-menu"
 import Company from "@/app/components/company"
 import Recruit from "@/app/components/recruit"
 import Contact from "@/app/components/contact"
+import AboutUs from "./components/about-us"
 
 export default function Home() {
   const [ isOpen, setIsOpen ] = useState(false)
@@ -75,6 +76,10 @@ export default function Home() {
 
       <div>
         <Contact />
+      </div>
+
+      <div>
+        <AboutUs />
       </div>
 
     </>
