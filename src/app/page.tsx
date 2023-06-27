@@ -1,8 +1,43 @@
-import Image from 'next/image'
+"use client"
+import { useState } from "react"
+import PcMenu from "@/app/components/pc-menu"
+import MobileMenu from "@/app/components/mobile-menu"
 
 export default function Home() {
+  const [ isOpen, setIsOpen ] = useState(false)
+
+  function handleClick() {
+    setIsOpen(!isOpen)
+    console.log("isOpen:", isOpen)
+  }
+
+  const CheckIsOpen = () => {
+    if(isOpen) {
+      return <MobileMenu />
+    }
+  }
+
   return (
     <>
+      <div className="bg-gray-200">
+        <header className="container mx-auto items-center">
+          <div className="flex justify-between">
+            <h1 className="text-lg font-semibold">サンプルCompany01</h1>
+            <button onClick={handleClick}>
+              <svg className="md:hidden h-6 w-6 fill-current" viewBox="0 0 24 24">
+                <path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z" />
+              </svg>
+            </button>
+          </div>
+          <div className="md:hidden">
+            <CheckIsOpen />
+          </div>
+          <div className="hidden md:flex md:justify-end">
+            <PcMenu />
+          </div>
+        </header>
+      </div>
+
       <div>
         ITと匠の融合
       </div>
