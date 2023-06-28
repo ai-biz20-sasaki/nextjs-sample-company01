@@ -8,9 +8,8 @@ import WhatIs from "@/app/components/what-is"
 import News from "@/app/components/news"
 import Company from "@/app/components/company"
 import Recruit from "@/app/components/recruit"
-import Contact from "@/app/components/contact"
-import AboutUs from "@/app/components/about-us"
 import ContactMobileMenu from "@/app/components/contact-mobile-menu"
+import Footer from "@/app/components/footer"
 
 export default function Home() {
   const [ isOpen, setIsOpen ] = useState(false)
@@ -37,6 +36,7 @@ export default function Home() {
 
   return (
     <>
+      {/*ヘッダー */}
       <div className="bg-gray-200/75 sticky top-0 p-3">
         <header className="container mx-auto items-center">
           <div className="flex justify-between">
@@ -64,6 +64,7 @@ export default function Home() {
         </header>
       </div>
 
+      {/*コンテンツ */}
       <div>
         <WhatIs />
       </div>
@@ -81,11 +82,7 @@ export default function Home() {
       </div>
 
       <div>
-        <Contact />
-      </div>
-
-      <div>
-        <AboutUs />
+        <Footer />
       </div>
 
     </>
