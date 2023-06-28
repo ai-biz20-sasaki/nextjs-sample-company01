@@ -6,7 +6,8 @@ import News from "@/app/components/news"
 import Company from "@/app/components/company"
 import Recruit from "@/app/components/recruit"
 import Contact from "@/app/components/contact"
-import AboutUs from "./components/about-us"
+import AboutUs from "@/app/components/about-us"
+import ContactMobileMenu from "@/app/components/contact-mobile-menu"
 
 export default function Home() {
   const [ isOpen, setIsOpen ] = useState(false)
@@ -18,7 +19,16 @@ export default function Home() {
 
   const CheckIsOpen = () => {
     if(isOpen) {
-      return <MobileMenu />
+      return (
+        <>
+          <div>
+            <MobileMenu />
+          </div>
+          <div className="p-3">
+            <ContactMobileMenu />
+          </div>
+        </>
+      )
     }
   }
 
@@ -37,9 +47,11 @@ export default function Home() {
           <div className="md:hidden">
             <CheckIsOpen />
           </div>
+
           <div className="hidden md:flex md:justify-end">
             <PcMenu />
           </div>
+
         </header>
       </div>
 
