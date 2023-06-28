@@ -65,25 +65,30 @@ export default function Home() {
       </div>
 
       {/*コンテンツ */}
-      <div>
-        <WhatIs />
-      </div>
+      <section>
+        <div>
+          <WhatIs />
+        </div>
 
-      <div>
-        <News />
-      </div>
+        <div>
+          <News />
+        </div>
 
-      <div>
-        <Company />
-      </div>
+        <div>
+          <Company />
+        </div>
 
-      <div>
-        <Recruit />
-      </div>
+        <div>
+          <Recruit />
+        </div>
+      </section>
 
-      <div>
-        <Footer />
-      </div>
+      {/* footer */}
+      <section>
+        <div>
+          <Footer />
+        </div>
+      </section>
 
     </>
   )
