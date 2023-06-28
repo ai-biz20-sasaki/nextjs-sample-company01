@@ -2,9 +2,9 @@ import Image from "next/image"
 
 export default function Contact() {
   return (
-    <div className="bg-gray-600 text-white px-3">
+    <div className="bg-neutral-700 text-white px-3 py-5">
       <div className="py-2">
-        <Image src="" alt="Contact image" className="" />
+        <Image src="/imgs/title_Contact.svg" alt="Contact image" width={250} height={50} />
       </div>
       <div className="py-2">
         お問い合わせ
@@ -26,19 +26,16 @@ export default function Contact() {
           <Image src="" alt="mail icon" className="" />
         </div>
         <div>
-          <div>
+          <div className="text-lime-500">
             メールでの
           </div>
-          <div>
+          <div className="text-lime-500">
             お問い合わせ
           </div>
         </div>
         <div className="py-2">
           <Image src="" alt="→" className="" />
         </div>
-      </div>
-      <div className="bg-gray-600 p-3">
-
       </div>
     </div>
   )
