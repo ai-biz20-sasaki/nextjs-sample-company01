@@ -21,20 +21,20 @@ export default function Contact() {
         </div>
       </div>
 
-      <div className="flex flex-row justify-center border-4 border-lime-500 my-4 mx-16 p-4 rounded-3xl">
-        <div className="py-2">
-          <Image src="" alt="mail icon" className="" />
+      <div className="flex flex-row justify-center items-center border-4 border-lime-400 my-4 mx-16 p-4 rounded-3xl">
+        <div className="py-2 mr-3">
+          <Image src="/imgs/mail.svg" alt="mail icon" width={50} height={50} />
         </div>
         <div>
-          <div className="text-lime-500">
+          <div className="text-lime-400">
             メールでの
           </div>
-          <div className="text-lime-500">
+          <div className="text-lime-400">
             お問い合わせ
           </div>
         </div>
         <div className="py-2">
-          <Image src="" alt="→" className="" />
+          <Image src="/imgs/arrow_right.svg" alt="→" width={50} height={50} />
         </div>
       </div>
     </div>
