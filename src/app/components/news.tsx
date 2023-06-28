@@ -2,9 +2,9 @@ import Image from "next/image"
 
 export default function News() {
   return (
-    <div className="">
+    <div className="m-3">
       <div className="py-3">
-        <Image src="" alt="news logo" className="" />
+        <Image src="/imgs/title_News.svg" alt="news logo" width={300} height={75} />
       </div>
       <p className="border-b border-black mx-3 py-3">
         お知らせ
@@ -21,9 +21,13 @@ export default function News() {
       <p className="border-b border-black mx-3 pb-2">
         溶接機を導入しました。
       </p>
-      <div className="flex justify-end py-3">
-        <Image src="" alt="Logo" className="" />
-        <a href="#">一覧を見る</a>
+      <div className="flex justify-end items-center py-3">
+        <div className="text-white bg-lime-500 rounded-full h-12 w-12 flex justify-center items-center">
+          &gt;
+        </div>
+        <div className="ml-2">
+          <a href="#">一覧を見る</a>
+        </div>
       </div>
     </div>          
   )
