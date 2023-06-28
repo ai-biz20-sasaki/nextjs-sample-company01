@@ -34,7 +34,7 @@ export default function Home() {
 
   return (
     <>
-      <div className="bg-gray-200/75 sticky top-0">
+      <div className="bg-gray-200/75 sticky top-0 p-3">
         <header className="container mx-auto items-center">
           <div className="flex justify-between">
             <h1 className="text-lg font-semibold">サンプルCompany01</h1>
