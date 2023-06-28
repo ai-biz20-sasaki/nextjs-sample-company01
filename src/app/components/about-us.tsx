@@ -5,11 +5,13 @@ export default function AboutUs() {
     <div className="bg-neutral-500 text-white px-3">
       <div className="flex justify-center">
         <div className="flex flex-col">
-          <div className="py-2">
-            <Image src="" alt="Company image" className="" />
-          </div>
-          <div className="py-2">
-            サンプルCompany01
+          <div className="flex flex-row items-center">
+            <div className="py-2">
+              <Image src="/imgs/company.svg" alt="news logo" width={35} height={35} />
+            </div>
+            <div className="py-2">
+              サンプルCompany01
+            </div>
           </div>
           <div className="py-2">
             本社 〒xxx-xxxx
