@@ -17,7 +17,7 @@ export default function Contact() {
             電話でのお問い合わせ
           </div>
           <div className="flex justify-center text-4xl">
-            0120-xx-xxxx
+            <a href="tel:0120-xx-xxxx">0120-xx-xxxx</a>
           </div>
           <div className="flex justify-center">
             営業時間／8:30-17:30
