@@ -37,7 +37,7 @@ export default function Home() {
   return (
     <>
       {/*ヘッダー */}
-      <div className="bg-gray-200/75 sticky top-0 p-3">
+      <div className="bg-gray-200/75 sticky top-0 p-3 z-50">
         <header className="container mx-auto items-center">
           <div className="flex justify-between">
             <div className="flex flex-row items-center">
@@ -65,7 +65,7 @@ export default function Home() {
       </div>
 
       {/*コンテンツ */}
-      <section>
+      <section id="#" className="relative">
         <div>
           <WhatIs />
         </div>
@@ -80,6 +80,13 @@ export default function Home() {
 
         <div>
           <Recruit />
+        </div>
+
+        {/* TOPへリンク */}
+        <div className="fixed bottom-0 right-0 p-4">
+          <a href="#">
+            <Image src="/imgs/totop.svg" alt="toTop image" width={10} height={10} />
+          </a>
         </div>
       </section>
 
