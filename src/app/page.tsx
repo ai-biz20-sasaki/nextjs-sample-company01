@@ -43,7 +43,9 @@ export default function Home() {
               <div className="py-3">
                 <Image src="/imgs/company.svg" alt="news logo" width={35} height={35} />
               </div>
-              <h1 className="text-lg font-semibold">サンプルCompany01</h1>
+                <h1 className="text-lg font-semibold">
+                  <a href="#">サンプルCompany01</a>
+                </h1>
             </div>
              {/*ハンバーガーメニュー */}
             <button onClick={handleClick}>
