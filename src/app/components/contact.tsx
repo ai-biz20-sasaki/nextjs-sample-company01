@@ -26,22 +26,32 @@ export default function Contact() {
 
         <div className="md:hidden m-3"></div>
 
-        <div className="flex flex-row justify-center items-center border-4 border-lime-400 rounded-3xl w-3/4 p-6 md:basis-1/2 md:h-32">
-          <div className="mr-3">
-            <Image src="/imgs/mail.svg" alt="mail icon" width={50} height={50} />
-          </div>
-          <div className="">
-            <a href="mailto:sample01@example.com">
-            <div className="text-lime-400">
-              メールでの
+        <div className="w-3/4 md:basis-1/2 md:h-32 group">
+          <div className="flex flex-row justify-center items-center border-4 border-lime-400 rounded-3xl p-6 group-hover:bg-lime-400">
+            <div className="mr-3">
+              <svg 
+                className="fill-lime-400 group-hover:fill-neutral-700"
+                xmlns="http://www.w3.org/2000/svg" height="50" width="50" viewBox="0 -960 960 960">
+                  <path d="M140-160q-24 0-42-18t-18-42v-520q0-24 18-42t42-18h680q24 0 42 18t18 42v520q0 24-18 42t-42 18H140Zm340-302L140-685v465h680v-465L480-462Zm0-60 336-218H145l335 218ZM140-685v-55 520-465Z"/>
+              </svg>
             </div>
-            <div className="text-lime-400">
-              お問い合わせ
+            <div className="">
+              <a href="mailto:sample01@example.com">
+              <div className="text-lime-400 group-hover:text-neutral-700">
+                メールでの
+              </div>
+              <div className="text-lime-400 group-hover:text-neutral-700">
+                お問い合わせ
+              </div>
+              </a>
             </div>
-            </a>
-          </div>
-          <div className="">
-            <Image src="/imgs/arrow_right.svg" alt="→" width={50} height={50} />
+            <div className="">
+              <svg 
+                className="fill-lime-400 group-hover:fill-neutral-700"
+                xmlns="http://www.w3.org/2000/svg" height="50" width="50" viewBox="0 -960 960 960">
+                  <path d="m561-242-43-42 168-168H160v-60h526L517-681l43-42 241 241-240 240Z"/>
+              </svg>
+            </div>
           </div>
         </div>
       </div>
