@@ -42,9 +42,7 @@ export default function Company() {
       <p className="border-b border-white mx-3 pb-2">
         1234xxxxxxxxxxxx
       </p>
-      <div className="flex justify-center py-3">
-        <Image src="" alt="Logo" className="" />
-      </div>
+      <div className="p-6"></div>
     </div>
 
   )
