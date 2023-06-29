@@ -9,7 +9,6 @@ import News from "@/app/components/news"
 import Company from "@/app/components/company"
 import Recruit from "@/app/components/recruit"
 import ContactMobileMenu from "@/app/components/contact-mobile-menu"
-import Footer from "@/app/components/footer"
 
 export default function Home() {
   const [ isOpen, setIsOpen ] = useState(false)
@@ -87,13 +86,6 @@ export default function Home() {
           <a href="#">
             <Image src="/imgs/totop.svg" alt="toTop image" width={10} height={10} />
           </a>
-        </div>
-      </section>
-
-      {/* footer */}
-      <section>
-        <div>
-          <Footer />
         </div>
       </section>
 
