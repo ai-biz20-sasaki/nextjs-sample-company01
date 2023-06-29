@@ -27,7 +27,7 @@ export default function Contact() {
         <div className="md:hidden m-3"></div>
 
         <div className="w-3/4 md:basis-1/2 md:h-32 group">
-          <div className="flex flex-row justify-center items-center border-4 border-lime-400 rounded-3xl p-6 group-hover:bg-lime-400">
+          <div className="flex flex-row justify-center items-center border-4 border-lime-400 rounded-3xl p-9 group-hover:bg-lime-400">
             <div className="mr-3">
               <svg 
                 className="fill-lime-400 group-hover:fill-neutral-700"
